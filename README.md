@@ -71,7 +71,7 @@ Our approach examines how data augmentation can enhance a pre-trained HuBERT mod
 These findings establish a framework for emotion-specific augmentation selection while highlighting the need for more sophisticated cross-corpus generalization approaches.
 
 ## Contributors
-Avital Finanser & Sivan Raviv-BenZvi
+Avital Finanser & Sivan Raviv-BenZvi.
 
 ## Acknowledgments
 This project was completed as part of Introduction to Deep Learning course at IEM Department, at Ben-Gurion University of the Negev, under the guidance of Ari Pakman, 2025.
