@@ -2,14 +2,14 @@
 Enhancing HuBERT's Speech Emotion Recognition through Data Augmentation and Fine-tuning.
 
 ## Overview
-This project investigates how various data augmentation techniques can enhance the robustness of HuBERT-based Speech Emotion Recognition (SER) models. We examine four key augmentation methods—Time Stretch, Additive Noise, SpecAugment, and Copy Paste—both individually and in probability-weighted combinations to determine optimal configurations for improving model performance and generalization.
+This project investigates how various data augmentation techniques can enhance the robustness of HuBERT-based Speech Emotion Recognition (SER) models. We examine four key augmentation methods—Time Stretch, Additive Noise, SpecAugment, and Natural Copy-paste (N-CP) — individually and in probability-weighted combinations to determine optimal configurations for improving model performance and generalization.
 
 ## Background
 Speech Emotion Recognition (SER) systems often struggle with real-world variability in acoustic conditions and speaker characteristics. Pre-trained models like HuBERT show promising performance in controlled environments but may lack robustness when deployed in diverse settings. Data augmentation offers a promising approach to address these limitations without requiring extensive additional data collection or radical model architecture changes.
 
 ## Repository Structure
 
-- **notebooks**: Contains implementation code executed in the Google Colab environment.
+- **notebooks**: Contains implementation code executed in the Google Colab environment. The notebooks in the repository are designed to run in Colab and include the necessary setup steps, including the needed project drive path. 
 - **data**: Includes cleaned RAVDNESS and SAVEE datasets.
 - **assets**: Contains summary visualizations.
 - **models**: Stores our 8 trained models, managed using Git LFS for efficient storage.
@@ -59,7 +59,7 @@ Our approach examines how data augmentation can enhance a pre-trained HuBERT mod
 
 ### Stage 5. Cross-Dataset Validation
 - **External Dataset Selection**: Utilization of SAVEE dataset with matching emotional categories
-- **Generalization Assessment**: Evaluation of top-performing models on unseen dataset
+- **Generalization Assessment**: Evaluation of top-performing models on an unseen dataset
 - **Comparative Analysis**: Quantification of improvement over baseline model
 - **Robustness Measurement**: Assessment of model performance across varied acoustic conditions
 
