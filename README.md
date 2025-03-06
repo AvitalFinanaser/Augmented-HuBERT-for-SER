@@ -52,10 +52,8 @@ Our approach examines how data augmentation can enhance a pre-trained HuBERT mod
 ### Stage 4. Combined Augmentation Models
 - **Weighted Combination Formulation**: Development of probability-weighted combinations based on individual F1-score gains
 - **Systematic Configuration Exploration**: Analysis of various weighting schemes for optimal performance
-- **Multi-method Model Creation**: Implementation of three combination strategies:
- 1. Two-method Integration: Combination of top-performing techniques (SpecAugment + Time Stretch)
- 2. Three-method Framework: Addition of third-best technique (+ Noise) to the combination
- 3. **Comprehensive Model Development**: Integration of all four techniques with optimized probability weights
+- **Multi-method Model Creation**: Implementation of three combination strategies - Top2, Top3, Top4
+- **Comprehensive Model Development**: Integration of all four techniques with optimized probability weights
 - **Probability-weighted Selection**: Implementation of sampling mechanism favoring higher-performing techniques
 - **Evaluation Framework**
 
@@ -66,10 +64,9 @@ Our approach examines how data augmentation can enhance a pre-trained HuBERT mod
 - **Robustness Measurement**: Assessment of model performance across varied acoustic conditions
 
 ## Key Findings
+
 * Frequency domain augmentations, particularly SpecAugment, proved most effective in preserving emotional markers while enhancing model robustness, especially for angry and fearful emotions.
-
 * The SpecAugment+TimeStretch combination demonstrated complementary benefits by targeting both frequency and temporal domains, achieving balanced performance across emotions.
-
 * Cross-corpus validation revealed persistent challenges, with substantial performance gaps indicating augmentation alone cannot bridge fundamental acoustic differences between datasets with distinct speaker demographics.
 
 These findings establish a framework for emotion-specific augmentation selection while highlighting the need for more sophisticated cross-corpus generalization approaches.
