@@ -8,7 +8,11 @@ This project investigates how various data augmentation techniques can enhance t
 Speech Emotion Recognition (SER) systems often struggle with real-world variability in acoustic conditions and speaker characteristics. Pre-trained models like HuBERT show promising performance in controlled environments but may lack robustness when deployed in diverse settings. Data augmentation offers a promising approach to address these limitations without requiring extensive additional data collection or radical model architecture changes.
 
 ## Repository Structure
-* 
+
+- **notebooks**: Contains implementation code executed in the Google Colab environment.
+- **data**: Includes cleaned RAVDNESS and SAVEE datasets.
+- **assets**: Contains summary visualizations.
+- **models**: Stores our 8 trained models, managed using Git LFS for efficient storage.
 
 ## Datasets
 The project uses two emotional speech datasets:
